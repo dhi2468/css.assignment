@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: unset;
+    border: 0;
+    box-shadow: none;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.menu ul {
+    justify-content: end;
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu ul li a {
+    font-size: 0.875rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.logo img {
+    max-width: 80%;
+    width: auto;
+}
+
+.banner-wrap {
+    text-align: center;
+}
+
+section.banner {
+    background-image: url(../images/homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.shadow {
+    background-color: rgba(15, 15, 14, 0.75);
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(-275% 0%, 50% 100%, 345% 0%);
+    
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9;
+}
+
+h3 {
+    font-size: 1.714rem;
+    color: #fff;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+.banner-wrap h1 {
+    font-size: 5.143rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 5.5rem;
+    margin-bottom: 20px;
+}
+
+.banner-wrap p {
+    max-width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    padding-bottom: 30px;
+}
+
+.btn-style a {
+    border: 1px solid transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8125rem;
+    padding: 0rem 3rem;
+    margin: 0 8px;
+    line-height: 45px;
+    display: inline-block;
+    background: #e74c3c;
+    transition: 0.5s all ease;
+}
+
+.btn-style a.tran {
+    border-color: #fff;
+    background: transparent;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    margin: 20px auto;
+    background: #e74c3c;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.circle:after,
+.circle:before {
+    content: "";
+    position: absolute;
+    right: 5%;
+    bottom: 4px;
+    height: 1px;
+    width: 80px;
+    background: #eee;
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.circle:after {
+    left: auto;
+    right: -110px;
+}
+
+.menu ul li a.active,
+.menu ul li a:hover {
+    color: red;
+}
+
+.menu ul li a.active:after,
+.menu ul li a:hover:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid red;
+    top: auto;
+    left: -7px;
+    right: -7px;
+    bottom: -13px;
+}
+
+.btn-style a:hover {
+    background: #e74c3c;
+    box-shadow: 5px 6px 5px #ccc;
+}
+
+.sleek-wrap ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+section.sleek-design {
+    padding: 100px 0;
+}
+
+.sleek-wrap ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sleek-wrap h2 {
+    font-size: 1.286rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    color: #797979;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+.sleek-wrap p {
+    line-height: 2rem;
+    font-size: 0.875rem;
+    color: #797979;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+}
+
+.box {
+    height: 60px;
+    width: 60px;
+    border: 1px solid #797979;
+    margin: 0 auto;
+    position: relative;
+    transition: 0.5s all ease;
+}
+
+.element {
+    border: 2px solid #797979;
+    width: 55px;
+    margin: 0 auto;
+    opacity: 0.5;
+    margin-bottom: 15px;
+}
+
+.box i:before {
+    content: "\f24d";
+    font-family: 'FontAwesome';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-style: normal;
+    color: #ff0000;
+}
+
+.box i.second:before {
+    content: "\f08a";
+}
+
+.box i.third:before {
+    content: "\f0eb";
+}
+
+.box i.four:before {
+    content: "\f0e6";
+}
+
+.sleek-wrap ul li:hover h2 {
+    color: red;
+}
+
+.sleek-wrap ul li:hover .box {
+    transform: rotate(45deg);
+    border-color: #ff0000;
+}
+
+.sleek-wrap ul li:hover .box i {
+    color: red;
+}
